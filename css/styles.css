@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: sans-serif;
+}
+.homepage_nav {
+  text-align: center;
+}
+
+.homepage_nav nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage_nav  ul li {
+  height: 100%;
+  font-size: 20px;
+  font-family: sans-serif;
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.homepage_nav  ul li a {
+  display: block;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+}
+
+.homepage_nav ul li div {
+  width: 100px;
+  height: 100px;
+  background-image: url('../images/placeholder_image.png');
+  background-size: cover;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+
+.homepage_header {
+  width: 100%;
+  height: 400px;
+  background-image: url('../images/placeholder_image.png');
+  background-size: cover;
+  margin-top: 50px;
+}
+
+
+.homepage_section_1 .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 200px;
+}
+
+.homepage_section_1 .container div {
+  border: 1px black solid;
+  text-align: center;
+  padding: 50px;
+}
+
+.homepage_section_1 .container div p {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+
+.homepage_section_2 .container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 200px;
+}
+
+.homepage_section_2 .container div {
+  border: 1px black solid;
+  text-align: center;
+  padding: 40px;
+}
+
+.homepage_section_2 .container .image {
+  background-image: url('../images/placeholder_image.png');
+  background-size: cover;
+}
+
+.homepage_section_3 .container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 200px;
+}
+
+.homepage_section_3 .container div {
+  border: 1px black solid;
+  text-align: center;
+  padding: 40px;
+}
+
+.homepage_section_3 .container .image {
+  background-image: url('../images/placeholder_image.png');
+  background-size: cover;
+}
+
+.homepage_section_4 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px;
+}
+
+.homepage_section_4 .container div {
+  border: 1px black solid;
+  text-align: center;
+  padding: 40px;
+}
+
+.homepage_section_4 .container .image {
+  border-radius: 50%;
+  width: 20px;
+  margin: 0 auto;
+  background-image: url('../images/placeholder_image.png');
+  background-size: cover;
+}
+
+.homepage_section_4 .container p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+footer {
+  background-color: darkgray;
+  padding: 30px;
+}
