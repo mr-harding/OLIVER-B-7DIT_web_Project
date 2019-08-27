@@ -5,17 +5,38 @@
   text-align: center;
   font-family: sans-serif;
 }
-.homepage_nav {
+
+/*
+This section below creates a 3/4 section that will be used
+*/
+.horizontal_3_quarter_section .container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 200px;
+}
+
+.horizontal_3_quarter_section .container div {
+  border: 1px black solid;
+  text-align: center;
+  padding: 20px;
+}
+
+.horizontal_3_quarter_section .container .image {
+  background-image: url('../images/placeholder_image.png');
+  background-size: cover;
+}
+
+nav {
   text-align: center;
 }
 
-.homepage_nav nav ul {
+nav nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.homepage_nav  ul li {
+nav  ul li {
   height: 100%;
   font-size: 20px;
   font-family: sans-serif;
@@ -23,14 +44,14 @@
   padding: 0 40px;
 }
 
-.homepage_nav  ul li a {
+nav  ul li a {
   display: block;
   color: gray;
   text-align: center;
   text-decoration: none;
 }
 
-.homepage_nav ul li div {
+nav ul li div {
   width: 100px;
   height: 100px;
   background-image: url('../images/placeholder_image.png');
@@ -40,7 +61,7 @@
 }
 
 
-.homepage_header {
+header {
   width: 100%;
   height: 400px;
   background-image: url('../images/placeholder_image.png');
@@ -67,40 +88,13 @@
 }
 
 
-.homepage_section_2 .container {
-  display: grid;
+#homepage_section_2 .container {
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 200px;
 }
 
-.homepage_section_2 .container div {
-  border: 1px black solid;
-  text-align: center;
-  padding: 40px;
-}
-
-.homepage_section_2 .container .image {
-  background-image: url('../images/placeholder_image.png');
-  background-size: cover;
-}
-
-.homepage_section_3 .container {
-  display: grid;
+#homepage_section_3 .container {
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 200px;
 }
-
-.homepage_section_3 .container div {
-  border: 1px black solid;
-  text-align: center;
-  padding: 40px;
-}
-
-.homepage_section_3 .container .image {
-  background-image: url('../images/placeholder_image.png');
-  background-size: cover;
-}
-
 .homepage_section_4 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -129,4 +123,18 @@
 footer {
   background-color: darkgray;
   padding: 30px;
+}
+
+
+#sports_section_1 .container{
+  grid-template-columns: 1fr 3fr;
+}
+#sports_section_2 .container{
+  grid-template-columns: 3fr 1fr;
+}
+#sports_section_3 .container{
+  grid-template-columns: 1fr 3fr;
+}
+#sports_section_4 .container{
+  grid-template-columns: 3fr 1fr;
 }
