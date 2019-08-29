@@ -169,3 +169,16 @@ footer {
   font-size: 35px;
   color: white;
 }
+
+.contact_grid {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  margin: 80px auto;
+
+}
+
+.contact_grid div {
+  border: 1px solid black;
+}
