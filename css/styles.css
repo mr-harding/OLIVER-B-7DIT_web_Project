@@ -123,6 +123,7 @@ header {
 footer {
   background-color: darkgray;
   padding: 30px;
+  margin-bottom: 0px;
 }
 
 
@@ -137,4 +138,34 @@ footer {
 }
 #sports_section_4 .container{
   grid-template-columns: 3fr 1fr;
+}
+
+
+.testomonial_box {
+  width: 50%;
+  background-color: black;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 400px;
+  grid-gap: 1px;
+  margin-top: 30px;
+}
+
+.testomonial_box .grid_half {
+
+}
+.testomonial_box .grid_half .image_box {
+  width: 200px;
+  height: 300px;
+  background-color: yellow;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+
+#text_half {
+  padding: 50px;
+  font-size: 35px;
+  color: white;
 }
