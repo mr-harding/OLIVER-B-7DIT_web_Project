@@ -1,9 +1,14 @@
+@font-face {
+  font-family: logo_font;
+  src: url('../fonts/Freshman.ttf');
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /*
@@ -13,10 +18,10 @@ This section below creates a 3/4 section that will be used
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 200px;
+  color: white;
 }
 
 .horizontal_3_quarter_section .container div {
-  border: 1px black solid;
   text-align: center;
   padding: 20px;
 }
@@ -24,6 +29,21 @@ This section below creates a 3/4 section that will be used
 .horizontal_3_quarter_section .container .image {
   background-image: url('../images/placeholder_image.png');
   background-size: cover;
+}
+
+.standard_button {
+  border: none;
+  background-color: #f3a953;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 200ms ease-in-out;
+}
+
+.standard_button:hover {
+  padding: 18px 32px;
 }
 
 nav {
@@ -51,22 +71,23 @@ nav  ul li a {
   text-decoration: none;
 }
 
-nav ul li div {
-  width: 100px;
-  height: 100px;
-  background-image: url('../images/placeholder_image.png');
-  background-size: cover;
-  padding: 0px;
-  margin-top: 20px;
+
+#logo {
+  font-family: logo_font;
+  font-size: 50px;
+  margin-top: 25px;
 }
 
 
 header {
   width: 100%;
   height: 400px;
-  background-image: url('../images/placeholder_image.png');
   background-size: cover;
   margin-top: 50px;
+}
+
+#homepage_header {
+  background-image: url('../images/University_image.jpg');
 }
 
 
@@ -76,8 +97,12 @@ header {
   grid-template-rows: 200px;
 }
 
+.homepage_section_1 h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
 .homepage_section_1 .container div {
-  border: 1px black solid;
+  border-right: 1px black solid;
   text-align: center;
   padding: 50px;
 }
@@ -92,9 +117,48 @@ header {
   grid-template-columns: 3fr 1fr;
 }
 
+
+#homepage_section_2 .standard_button {
+  margin-right: -1000px;
+  margin-top: 20px;
+  z-index: 100;
+}
+
+#homepage_section_2 {
+  background-color: #366ed8;
+  color: white;
+  padding: 40px;
+  font-size: 20px;
+}
+
+#homepage_section_2 .image {
+  background-image: url('../images/football_photo.jpg');
+}
+#homepage_section_3 {
+  background-color: #f3a953;
+  color: white;
+  padding: 40px;
+  font-size: 20px;
+}
+
+
+
 #homepage_section_3 .container {
   grid-template-columns: 1fr 3fr;
 }
+
+#homepage_section_3 .standard_button {
+  background-color: #366ed8;
+  margin-left: -1000px;
+  margin-top: 20px;
+
+}
+
+#homepage_section_3 .image {
+  background-image: url('../images/rowing_photo.jpg');
+}
+
+
 .homepage_section_4 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -120,33 +184,68 @@ header {
   font-size: 15px;
 }
 
+#image_1 {
+  background-image: url('../images/person_1.jpg');
+}
+#image_2 {
+  background-image: url('../images/person_2.jpg');
+}
+#image_3 {
+  background-image: url('../images/person_3.jpg');
+}
 footer {
-  background-color: darkgray;
+  background-color: #366ed8;
   padding: 30px;
   margin-bottom: 0px;
 }
 
 
-#sports_section_1 .container{
+.sportspage_header {
+  background-image: url(../images/Football_field.jpg);
+  background-size: cover;
+}
+
+.sportspage_header span {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: 4px white solid;
+}
+#scholarship_section_1 .container{
   grid-template-columns: 1fr 3fr;
+  background-color: #f3a953;
+
 }
-#sports_section_2 .container{
+
+#scholarship_section_1 .image {
+  background-image: url(../images/soccer_photo_2.jpg);
+}
+#scholarship_section_2 .container{
   grid-template-columns: 3fr 1fr;
+  background-color: #366ed8;
 }
-#sports_section_3 .container{
+
+#scholarship_section_2 .image {
+  background-image: url(../images/basketball_photo.jpg);
+}
+#scholarship_section_3 .container{
   grid-template-columns: 1fr 3fr;
+  background-color: #f3a953;
 }
-#sports_section_4 .container{
-  grid-template-columns: 3fr 1fr;
+
+#scholarship_section_3 .image {
+  background-image: url(../images/track_photo.jpg);
 }
+
 
 
 .testomonial_box {
   width: 50%;
-  background-color: black;
+  background-color: #366ed8;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 400px;
   grid-gap: 1px;
   margin-top: 30px;
@@ -159,15 +258,29 @@ footer {
   width: 200px;
   height: 300px;
   background-color: yellow;
-  margin: 0 auto;
+  margin-left: -100px;
   margin-top: 50px;
-  border-radius: 50%;
 }
 
 #text_half {
-  padding: 50px;
-  font-size: 35px;
+  padding: 80px;
+  font-size: 30px;
   color: white;
+}
+
+#image_box_1 {
+  background-image: url('../images/person_1.jpg');
+  background-size: contain;
+}
+
+#image_box_2 {
+  background-image: url('../images/person_2.jpg');
+  background-size: cover;
+}
+
+#image_box_3 {
+  background-image: url('../images/person_3.jpg');
+  background-size: cover;
 }
 
 .contact_grid {
@@ -179,6 +292,71 @@ footer {
 
 }
 
-.contact_grid div {
-  border: 1px solid black;
+
+#email {
+  background-color: #366ed8;
+
+}
+
+#email img {
+  width: 50%;
+  margin-top: 10px;
+}
+
+#instagram {
+  background-color: #f3a953;
+}
+
+#instagram img {
+  width: 35%;
+  margin-top: 40px;
+}
+
+#twitter {
+  background-color: #366ed8;
+}
+
+#twitter img {
+  width: 40%;
+  margin-top: 30px;
+}
+
+#NCAA{
+  background-color: #f3a953;
+}
+
+#NCAA img {
+  width: 50%;
+  margin-top: 10px;
+}
+
+.scholarship_header {
+  background-image: url('../images/lecture_theater.jpeg');
+  background-size: cover;
+}
+
+#sports_section_1 .container{
+  grid-template-columns: 1fr 3fr;
+  background-color: #366ed8;
+
+}
+
+#sports_section_1 .image {
+  background-image: url(../images/rugby_photo.jpg);
+}
+#sports_section_2 .container{
+  grid-template-columns: 3fr 1fr;
+  background-color: #f3a953;
+}
+
+#sports_section_2 .image {
+  background-image: url(../images/rowing_photo_2.jpg);
+}
+#sports_section_3 .container{
+  grid-template-columns: 1fr 3fr;
+  background-color: #366ed8;
+}
+
+#sports_section_3 .image {
+  background-image: url(../images/swimming_photo.jpg);
 }
