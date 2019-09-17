@@ -33,7 +33,6 @@ This section below creates a 3/4 section that will be used
 
 .standard_button {
   border: none;
-  background-color: #f3a953;
   color: white;
   padding: 14px 28px;
   font-size: 16px;
@@ -127,9 +126,10 @@ header {
 
 
 #homepage_section_2 .standard_button {
-  margin-right: -1000px;
-  margin-top: 20px;
-  z-index: 100;
+  background-color: #f3a953;
+  position: relative;
+  top: 100px;
+  right: 150px;
 }
 
 #homepage_section_2 {
@@ -157,8 +157,9 @@ header {
 
 #homepage_section_3 .standard_button {
   background-color: #366ed8;
-  margin-left: -1000px;
-  margin-top: 20px;
+  position: relative;
+  top: 100px;
+  left: 150px;
 
 }
 
