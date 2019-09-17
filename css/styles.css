@@ -66,16 +66,22 @@ nav  ul li {
 
 nav  ul li a {
   display: block;
-  color: gray;
+  color: #f3a953;
   text-align: center;
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  color: black;
+}
+
 
 #logo {
-  font-family: logo_font;
+  font-family: 'Alfa Slab One', cursive;
   font-size: 50px;
   margin-top: 25px;
+  font-weight: lighter;
+  color: #366ed8;
 }
 
 
