@@ -224,7 +224,7 @@ footer {
 }
 #scholarship_section_1 .container{
   grid-template-columns: 1fr 3fr;
-  background-color: #f3a953;
+  background-color: #366ed8;
 
 }
 
@@ -233,7 +233,7 @@ footer {
 }
 #scholarship_section_2 .container{
   grid-template-columns: 3fr 1fr;
-  background-color: #366ed8;
+  background-color: #f3a953;
 }
 
 #scholarship_section_2 .image {
@@ -241,7 +241,7 @@ footer {
 }
 #scholarship_section_3 .container{
   grid-template-columns: 1fr 3fr;
-  background-color: #f3a953;
+  background-color: #366ed8;
 }
 
 #scholarship_section_3 .image {
@@ -291,6 +291,13 @@ footer {
 #image_box_3 {
   background-image: url('../images/person_3.jpg');
   background-size: cover;
+}
+
+#testomonial_box_1 {
+background-color: #366ed8;
+}
+#testomonial_box_2 {
+  background-color: #f3a953;
 }
 
 .contact_grid {
