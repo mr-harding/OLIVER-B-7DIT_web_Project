@@ -19,6 +19,7 @@ This section below creates a 3/4 section that will be used
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 200px;
   color: white;
+  font-size: 18px;
 }
 
 .horizontal_3_quarter_section .container div {
@@ -115,7 +116,7 @@ header {
 }
 
 .homepage_section_1 .container div p {
-  font-size: 15px;
+  font-size: 17px;
   font-family: sans-serif;
 }
 
@@ -136,7 +137,7 @@ header {
   background-color: #366ed8;
   color: white;
   padding: 40px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 #homepage_section_2 .image {
@@ -146,7 +147,7 @@ header {
   background-color: #f3a953;
   color: white;
   padding: 40px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 
@@ -214,12 +215,11 @@ footer {
   background-size: cover;
 }
 
-.sportspage_header span {
+.sportspage_header h1 {
   font-size: 40px;
   color: white;
-  font-weight: bold;
-  letter-spacing: 2px;
-  border: 4px white solid;
+  position: relative;
+  top: 160px;
 }
 #scholarship_section_1 .container{
   grid-template-columns: 1fr 3fr;
@@ -346,7 +346,7 @@ footer {
 
 #sports_section_1 .container{
   grid-template-columns: 1fr 3fr;
-  background-color: #366ed8;
+  background-color: #f3a953;
 
 }
 
@@ -355,7 +355,7 @@ footer {
 }
 #sports_section_2 .container{
   grid-template-columns: 3fr 1fr;
-  background-color: #f3a953;
+  background-color: #366ed8;
 }
 
 #sports_section_2 .image {
@@ -363,7 +363,7 @@ footer {
 }
 #sports_section_3 .container{
   grid-template-columns: 1fr 3fr;
-  background-color: #366ed8;
+  background-color: #f3a953;
 }
 
 #sports_section_3 .image {
