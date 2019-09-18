@@ -24,7 +24,7 @@ This section below creates a 3/4 section that will be used
 
 .horizontal_3_quarter_section .container div {
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 }
 
 .horizontal_3_quarter_section .container .image {
@@ -213,6 +213,7 @@ footer {
 .sportspage_header {
   background-image: url(../images/Football_field.jpg);
   background-size: cover;
+  background-position: bottom;
 }
 
 .sportspage_header h1 {
@@ -342,6 +343,14 @@ footer {
 .scholarship_header {
   background-image: url('../images/lecture_theater.jpeg');
   background-size: cover;
+  background-position: bottom;
+}
+
+.scholarship_header h1 {
+  font-size: 40px;
+  color: white;
+  position: relative;
+  top: 160px;
 }
 
 #sports_section_1 .container{
