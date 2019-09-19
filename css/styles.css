@@ -49,6 +49,10 @@ This section below creates a 3/4 section that will be used
   padding: 18px 32px;
 }
 
+.standard_button a {
+  color: white;
+}
+
 nav {
   text-align: center;
 }
@@ -135,6 +139,8 @@ header {
   top: 100px;
   right: 150px;
 }
+
+
 
 #homepage_section_2 {
   background-color: #366ed8;
